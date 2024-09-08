@@ -4,3 +4,6 @@
 [submodule "sa_user"]
 	path = sa_user
 	url = git@github.com:zchelalo/sa_user.git
+[submodule "sa_proto"]
+	path = sa_proto
+	url = git@github.com:zchelalo/sa_proto.git
