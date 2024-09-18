@@ -11,3 +11,6 @@ git pull origin main
 
 cd ../sa_api_gateway
 git pull origin main
+
+cd ../
+git pull origin main
