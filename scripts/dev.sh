@@ -6,8 +6,8 @@ sudo make composebuilddetached
 cd ../sa_auth
 npm run compose:build:detached
 
-cd ../sa_api_gateway
+cd ../sa_class_management
 sudo make composebuilddetached
 
-cd ../sa_class_management
+cd ../sa_api_gateway
 sudo make composebuilddetached

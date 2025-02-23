@@ -1,16 +1,13 @@
 #!/bin/bash
 
 cd ./sa_user
-make protouser
+make proto
 
 cd ../sa_auth
-npm run proto:generate:auth
-npm run proto:generate:user
-
-cd ../sa_api_gateway
-make protouser
-make protoauth
+npm run proto:generate
 
 cd ../sa_class_management
-make protouser
-make protoauth
+make proto
+
+cd ../sa_api_gateway
+make proto
