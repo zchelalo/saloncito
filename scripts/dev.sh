@@ -1,13 +1,13 @@
 #!/bin/bash
 
 cd ./sa_user
-sudo make composebuilddetached
+sudo make compose-build-detached
 
 cd ../sa_auth
 npm run compose:build:detached
 
 cd ../sa_class_management
-sudo make composebuilddetached
+sudo make compose-build-detached
 
 cd ../sa_api_gateway
-sudo make composebuilddetached
+sudo make compose-build-detached
