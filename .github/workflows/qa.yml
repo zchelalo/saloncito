@@ -24,14 +24,6 @@ jobs:
         sudo chmod +x /usr/local/bin/docker-compose
         docker-compose --version
 
-    - name: Install make and npm
-      run: |
-        sudo apt-get update
-        sudo apt-get install -y make
-        sudo apt-get install -y npm
-        make --version  # Verifica la instalación de make
-        npm --version   # Verifica la instalación de npm
-
     - name: Create saloncito network
       run: |
         docker network create saloncito
