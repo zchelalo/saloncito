@@ -1,0 +1,275 @@
+{
+	"info": {
+		"_postman_id": "022acbaa-1ae6-46c4-b251-9fb4e1e2fc15",
+		"name": "Saloncito_API_Gateway",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25458942"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "GetProfile",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{http}}://{{apiGatewayHost}}/profile",
+							"protocol": "{{http}}",
+							"host": [
+								"{{apiGatewayHost}}"
+							],
+							"path": [
+								"profile"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "SignIn",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"lalo@email.com\",\r\n    \"password\": \"12345678\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{http}}://{{apiGatewayHost}}/auth/sign-in",
+							"protocol": "{{http}}",
+							"host": [
+								"{{apiGatewayHost}}"
+							],
+							"path": [
+								"auth",
+								"sign-in"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SignUp",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Lalo\",\r\n    \"email\": \"lalo@gmail.com\",\r\n    \"password\": \"12345678\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{http}}://{{apiGatewayHost}}/auth/sign-up",
+							"protocol": "{{http}}",
+							"host": [
+								"{{apiGatewayHost}}"
+							],
+							"path": [
+								"auth",
+								"sign-up"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SignOut",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{http}}://{{apiGatewayHost}}/auth/sign-out",
+							"protocol": "{{http}}",
+							"host": [
+								"{{apiGatewayHost}}"
+							],
+							"path": [
+								"auth",
+								"sign-out"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Classes",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Clase 1\",\r\n    \"grade\": \"10mo\",\r\n    \"subject\": \"Desarrollo web\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{http}}://{{apiGatewayHost}}/classes",
+							"protocol": "{{http}}",
+							"host": [
+								"{{apiGatewayHost}}"
+							],
+							"path": [
+								"classes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Join",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"code\": \"ZU70dm\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{http}}://{{apiGatewayHost}}/classes/join",
+							"protocol": "{{http}}",
+							"host": [
+								"{{apiGatewayHost}}"
+							],
+							"path": [
+								"classes",
+								"join"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{http}}://{{apiGatewayHost}}/classes?page=1&limit=10",
+							"protocol": "{{http}}",
+							"host": [
+								"{{apiGatewayHost}}"
+							],
+							"path": [
+								"classes"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListMembers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{http}}://{{apiGatewayHost}}/classes/23a22631-4c2e-4e12-8e05-0ceb9f6a69db/members?page=1&limit=10",
+							"protocol": "{{http}}",
+							"host": [
+								"{{apiGatewayHost}}"
+							],
+							"path": [
+								"classes",
+								"23a22631-4c2e-4e12-8e05-0ceb9f6a69db",
+								"members"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetClassCode",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{http}}://{{apiGatewayHost}}/classes/23a22631-4c2e-4e12-8e05-0ceb9f6a69db/code",
+							"protocol": "{{http}}",
+							"host": [
+								"{{apiGatewayHost}}"
+							],
+							"path": [
+								"classes",
+								"23a22631-4c2e-4e12-8e05-0ceb9f6a69db",
+								"code"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
