@@ -43,7 +43,7 @@ jobs:
 
     - name: Build and start nginx containers
       run: |
-        docker-compose -f ./dockers/docker-compose.yml up --build -d
+        docker-compose -f ./.dockers/docker-compose.yml up --build -d
 
     - name: Wait for nginx to be ready
       run: |
