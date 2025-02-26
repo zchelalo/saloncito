@@ -1,0 +1,38 @@
+name: qa
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  setup_and_test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout the repository
+      uses: actions/checkout@v3
+
+    - name: Set up Docker Buildx
+      uses: docker/setup-buildx-action@v2
+
+    - name: Set up Docker Compose
+      uses: docker/compose-action@v2
+
+    - name: Run setup script to start submodules' containers
+      run: |
+        chmod +x ./scripts/setup.sh
+        ./scripts/setup.sh
+
+    - name: Build and start nginx containers
+      run: |
+        docker-compose -f ./dockers/docker-compose.yml up --build -d
+
+    - name: Wait for nginx to be ready
+      run: |
+        sleep 20
+
+    - name: Run endpoint tests
+      run: |
+        chmod +x ./scripts/test_endpoints.sh
+        ./scripts/test_endpoints.sh
