@@ -32,6 +32,10 @@ jobs:
         make --version  # Verifica la instalación de make
         npm --version   # Verifica la instalación de npm
 
+    - name: Create saloncito network
+      run: |
+        docker network create saloncito
+
     - name: Run setup script to start submodules' containers
       run: |
         chmod +x ./scripts/setup.sh
