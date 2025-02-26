@@ -1,13 +1,13 @@
 #!/bin/bash
 
 cd ./sa_user
-make setup
+sudo make setup
 
 cd ../sa_auth
 npm run setup
 
 cd ../sa_class_management
-make setup
+sudo make setup
 
 cd ../sa_api_gateway
-make setup
+sudo make setup
