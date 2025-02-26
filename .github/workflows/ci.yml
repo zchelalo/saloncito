@@ -1,4 +1,4 @@
-name: qa
+name: ci
 
 on:
   push:
@@ -6,7 +6,8 @@ on:
       - main
 
 jobs:
-  setup_and_test:
+  test_endpoints:
+    name: Test Endpoints
     runs-on: ubuntu-latest
 
     steps:
