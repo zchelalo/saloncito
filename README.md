@@ -8,6 +8,7 @@ This repository has all the submodules about the Saloncito APP.
   - [Setup project](#setup-project)
   - [Docker execution](#docker-execution)
   - [Proto files](#proto-files)
+  - [Test endpoints](#test-endpoints)
 
 ## How to run the project?
 ### Prerequisites
@@ -31,5 +32,8 @@ If you need to stop all the Docker containers, you can run `./scripts/stop.sh`.
 
 ### Proto files
 If you need to generate the proto files in each submodule, run `./scripts/create_proto_files.sh`.
+
+### Test endpoints
+To test the application endpoints, run `./scripts/test_endpoints.sh`. Make sure the application is running.
 
 *Note: If any script doesn't have permissions, you will need to grant them by running `chmod +x ./scripts/script.sh.`*
