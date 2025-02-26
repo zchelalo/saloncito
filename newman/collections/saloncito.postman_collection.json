@@ -27,10 +27,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{http}}://{{apiGatewayHost}}/profile",
+							"raw": "{{http}}://{{host}}/profile",
 							"protocol": "{{http}}",
 							"host": [
-								"{{apiGatewayHost}}"
+								"{{host}}"
 							],
 							"path": [
 								"profile"
@@ -71,10 +71,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{http}}://{{apiGatewayHost}}/auth/sign-in",
+							"raw": "{{http}}://{{host}}/auth/sign-in",
 							"protocol": "{{http}}",
 							"host": [
-								"{{apiGatewayHost}}"
+								"{{host}}"
 							],
 							"path": [
 								"auth",
@@ -99,10 +99,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{http}}://{{apiGatewayHost}}/auth/sign-up",
+							"raw": "{{http}}://{{host}}/auth/sign-up",
 							"protocol": "{{http}}",
 							"host": [
-								"{{apiGatewayHost}}"
+								"{{host}}"
 							],
 							"path": [
 								"auth",
@@ -118,10 +118,10 @@
 						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": "{{http}}://{{apiGatewayHost}}/auth/sign-out",
+							"raw": "{{http}}://{{host}}/auth/sign-out",
 							"protocol": "{{http}}",
 							"host": [
-								"{{apiGatewayHost}}"
+								"{{host}}"
 							],
 							"path": [
 								"auth",
@@ -151,10 +151,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{http}}://{{apiGatewayHost}}/classes",
+							"raw": "{{http}}://{{host}}/classes",
 							"protocol": "{{http}}",
 							"host": [
-								"{{apiGatewayHost}}"
+								"{{host}}"
 							],
 							"path": [
 								"classes"
@@ -178,10 +178,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{http}}://{{apiGatewayHost}}/classes/join",
+							"raw": "{{http}}://{{host}}/classes/join",
 							"protocol": "{{http}}",
 							"host": [
-								"{{apiGatewayHost}}"
+								"{{host}}"
 							],
 							"path": [
 								"classes",
@@ -197,10 +197,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{http}}://{{apiGatewayHost}}/classes?page=1&limit=10",
+							"raw": "{{http}}://{{host}}/classes?page=1&limit=10",
 							"protocol": "{{http}}",
 							"host": [
-								"{{apiGatewayHost}}"
+								"{{host}}"
 							],
 							"path": [
 								"classes"
@@ -225,10 +225,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{http}}://{{apiGatewayHost}}/classes/23a22631-4c2e-4e12-8e05-0ceb9f6a69db/members?page=1&limit=10",
+							"raw": "{{http}}://{{host}}/classes/23a22631-4c2e-4e12-8e05-0ceb9f6a69db/members?page=1&limit=10",
 							"protocol": "{{http}}",
 							"host": [
-								"{{apiGatewayHost}}"
+								"{{host}}"
 							],
 							"path": [
 								"classes",
@@ -255,10 +255,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{http}}://{{apiGatewayHost}}/classes/23a22631-4c2e-4e12-8e05-0ceb9f6a69db/code",
+							"raw": "{{http}}://{{host}}/classes/23a22631-4c2e-4e12-8e05-0ceb9f6a69db/code",
 							"protocol": "{{http}}",
 							"host": [
-								"{{apiGatewayHost}}"
+								"{{host}}"
 							],
 							"path": [
 								"classes",

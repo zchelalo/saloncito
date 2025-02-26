@@ -1,0 +1,20 @@
+services:
+
+  sa_nginx:
+    build:
+      context: ../
+      dockerfile: nginx/Dockerfile
+    container_name: sa_nginx
+    volumes:
+      - ../nginx/nginx.conf:/etc/nginx/nginx.conf
+    ports:
+      - 80:80
+    networks:
+      - saloncito
+      - sa_nginx_network
+
+networks:
+  saloncito:
+    external: true
+  sa_nginx_network:
+    driver: bridge
