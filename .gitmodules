@@ -13,3 +13,6 @@
 [submodule "sa_class_management"]
 	path = sa_class_management
 	url = git@github.com:zchelalo/sa_class_management.git
+[submodule "sa_file_management"]
+	path = sa_file_management
+	url = git@github.com:zchelalo/sa_file_management.git
