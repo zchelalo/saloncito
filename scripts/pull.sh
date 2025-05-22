@@ -1,9 +1,6 @@
 #!/bin/bash
 
-cd ./sa_proto
-git pull origin main
-
-cd ../sa_user
+cd ./sa_user
 git pull origin main
 cd ./sa_proto
 git pull origin main
@@ -19,6 +16,11 @@ cd ./sa_proto
 git pull origin main
 
 cd ../../sa_api_gateway
+git pull origin main
+cd ./sa_proto
+git pull origin main
+
+cd ../../sa_file_management
 git pull origin main
 cd ./sa_proto
 git pull origin main

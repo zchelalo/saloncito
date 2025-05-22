@@ -1,9 +1,6 @@
 [submodule "sa_auth"]
 	path = sa_auth
 	url = git@github.com:zchelalo/sa_auth.git
-[submodule "sa_proto"]
-	path = sa_proto
-	url = git@github.com:zchelalo/sa_proto.git
 [submodule "sa_user"]
 	path = sa_user
 	url = git@github.com:zchelalo/sa_user.git
